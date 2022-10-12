@@ -20,9 +20,20 @@ namespace ZTestWebAPI.Controllers
             .Select(i => (Id: i, Value: $"Value-{i}"))
             .ToDictionary(v => v.Id, v => v.Value);
 
-        //Создадим набор действий в для управления словарём
-        [HttpGet]
+        //Создадим набор действий в для управления словарём (получение всего набора, получение значения по Id, редактировать, удалить значение по Id)
+        [HttpGet] //GET -> http://localhost:5000/api/values
         public IActionResult Get() => Ok(Values.Values);
+
+        [HttpGet]//GET -> http://localhost:5000/api/values/5
+        public IActionResult Get(int Id)
+        {
+            if (!Values.ContainsKey(Id))
+            {
+                return NotFound();
+            }
+
+            return Ok(Values[Id]);
+        }
     }
 }
 
