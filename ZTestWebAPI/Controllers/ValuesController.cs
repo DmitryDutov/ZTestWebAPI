@@ -24,7 +24,7 @@ namespace ZTestWebAPI.Controllers
         [HttpGet] //GET -> http://localhost:5000/api/values
         public IActionResult Get() => Ok(Values.Values);
 
-        [HttpGet]//GET -> http://localhost:5000/api/values/5
+        [HttpGet("{Id}")]//GET -> http://localhost:5000/api/values/5
         public IActionResult Get(int Id)
         {
             if (!Values.ContainsKey(Id))
