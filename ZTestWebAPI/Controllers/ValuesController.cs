@@ -39,6 +39,16 @@ namespace ZTestWebAPI.Controllers
         //public IActionResult Count() => Ok(Values.Count);
         //public ActionResult<int> Count()=> Values.Count();
         public int Count()=>Values.Count;
+
+        [HttpPost] //POST -> http://localhost:5000/api/values
+        [HttpPost("add")] //POST -> http://localhost:5000/api/values/add
+        public IActionResult Add([FromBody] string Value)
+        {
+            var id = Values.Count == 0 ? 1 : Values.Keys.Max() + 1;
+            Values[id] = Value;
+
+            return CreatedAtAction(nameof(GetById), new {id});
+        }
     }
 }
 
