@@ -10,7 +10,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseWebAssemblyDebugging(); //Подключение к браузеру для отладки Blazor
+    app.UseWebAssemblyDebugging();   //Подключение к браузеру для отладки Blazor
     app.UseSwagger();
     app.UseSwaggerUI();
 }
