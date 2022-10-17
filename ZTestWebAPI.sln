@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTestWebAPI", "ZTestWebAPI\ZTestWebAPI.csproj", "{415620D3-F913-4FF6-9D59-57B965724F7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTestWebAPI", "ZTestWebAPI\ZTestWebAPI.csproj", "{415620D3-F913-4FF6-9D59-57B965724F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorForZTestWebAPI", "UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj", "{9AAF84F0-1EBF-422C-AB92-775853BD1015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{415620D3-F913-4FF6-9D59-57B965724F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{415620D3-F913-4FF6-9D59-57B965724F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{415620D3-F913-4FF6-9D59-57B965724F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
