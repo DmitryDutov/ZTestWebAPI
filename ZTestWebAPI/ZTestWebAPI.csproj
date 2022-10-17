@@ -15,4 +15,8 @@
     <ProjectReference Include="..\UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

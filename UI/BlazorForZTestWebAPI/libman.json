@@ -19,17 +19,18 @@
       "destination": "wwwroot/lib-blazor/open-iconic/",
       "files": [
         "font/css/open-iconic-bootstrap.css",
-        "font/css/open-iconic-bootstrap.main.css",
+        "font/css/open-iconic-bootstrap.min.css",
         "font/css/open-iconic-foundation.css",
-        "font/css/open-iconic-foundation.main.css",
+        "font/css/open-iconic-foundation.min.css",
         "font/css/open-iconic.css",
-        "font/css/open-iconic.main.css",
-        "font/css/open-iconic.eot",
-        "font/css/open-iconic.otf",
-        "font/css/open-iconic.svg",
-        "font/css/open-iconic.ttf",
-        "font/css/open-iconic.woff"
+        "font/css/open-iconic.min.css",
+        "font/fonts/open-iconic.eot",
+        "font/fonts/open-iconic.otf",
+        "font/fonts/open-iconic.svg",
+        "font/fonts/open-iconic.ttf",
+        "font/fonts/open-iconic.woff"
       ]
     }
   ]
 }
+
