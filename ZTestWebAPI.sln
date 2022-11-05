@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTestWebAPI", "ZTestWebAPI\ZTestWebAPI.csproj", "{415620D3-F913-4FF6-9D59-57B965724F7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorForZTestWebAPI", "UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj", "{9AAF84F0-1EBF-422C-AB92-775853BD1015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorForZTestWebAPI", "UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj", "{9AAF84F0-1EBF-422C-AB92-775853BD1015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
