@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ZTestWebAPI.Models
 {
-    public class Values
+    public class ValueModel
     {
+        public int Id { get; set; }
+        public string? Value { get; set; }
 
     }
 }
