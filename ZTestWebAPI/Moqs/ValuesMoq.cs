@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ZTestWebAPI.Models;
 
 namespace ZTestWebAPI.Moqs
 {
     public class ValuesMoq
     {
-        //Создаём нумерованный словарь и заполняем его
-        public  Dictionary<int, string> Values = Enumerable .Range(1, 10) 
-                                                                  .Select(i => (Id: i, Value: $"Value-{i}")) 
-                                                                  .ToDictionary(v => v.Id, v => v.Value);
+        private readonly ValueModel _model;
+        public Dictionary<int, string>  Values => _model.Values;
 
+        public ValuesMoq(ValueModel model)
+        {
+            _model.Values = Enumerable .Range(1, 10) 
+                                       .Select(i => (Id: i, Value: $"Value-{i}")) 
+                                       .ToDictionary(v => v.Id, v => v.Value);
+
+        }
         public Dictionary<int, string>.KeyCollection Keys => Values.Keys;
 
         public int Count => Values.Count;
