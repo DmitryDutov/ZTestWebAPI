@@ -9,7 +9,7 @@ namespace ZTestWebAPI.Controllers
     public class ValuesController : ControllerBase
     {
         private readonly ILogger<ValuesController> _logger;
-        public List<ValueModel>? Values { get; set; }
+        public ICollection<ValueModel>? Values { get; set; }
 
         //Получаем сервисы в конструктор и передаём их в поля класса
         public ValuesController(ILogger<ValuesController> logger, ValuesList values)
@@ -31,7 +31,7 @@ namespace ZTestWebAPI.Controllers
                 return NotFound();
             }
 
-            return Ok(Values?.Find(x => x.Id == id));
+            return Ok(Values?.FirstOrDefault(x => x.Id == id));
         }
 
         [HttpGet("count")] //GET -> "http://localhost:5229/api/values/count"
@@ -69,7 +69,7 @@ namespace ZTestWebAPI.Controllers
                 Value = Value
             };
 
-            Values.Remove(Values.Find(x => x.Id == id));
+            Values.Remove(Values.FirstOrDefault(x => x.Id == id));
             Values?.Add(item);
 
             return Ok($"Объект с Id = {id} был изменен");
@@ -83,7 +83,7 @@ namespace ZTestWebAPI.Controllers
                 return NotFound();
             }
 
-            var item = Values.Find(x => x.Id == id);
+            var item = Values.FirstOrDefault(x => x.Id == id);
             Values.Remove(item);
 
             return Ok($"Объект Id:{item.Id}, Value:{item.Value} удален");
