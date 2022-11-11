@@ -21,46 +21,6 @@ namespace ZTestWebAPI.Moqs
             }
 
         }
-
-        //    public int Max
-        //    {
-        //        get
-        //        {
-        //            int? obj = _value?.Find(x => x.Id == Max).Id;
-
-        //            return obj == null ? 0 : obj.Value;
-        //        }
-        //    }
-
-        //    public int Count => Values.Count;
-
-        //    public bool GetKey(int key)
-        //    {
-        //        var info = _value.Any(x => x.Id == key);
-
-        //        return info;
-        //    }
-
-        //    public string? GetValueById(int id)
-        //    {
-        //        return Values?.Find(x => x.Id == id).Value;
-        //    }
-
-        //    public ValueModel AddValue(int id, string value)
-        //    {
-        //        var model = new ValueModel
-        //        {
-        //            Id = id,
-        //            Value = value
-        //        };
-
-        //        return model;
-        //    }
-
-        //    public void Remove(int id)
-        //    {
-        //        Values.Remove(Values?.Find(x => x?.Id == id));
-        //    }
     }
 }
 
