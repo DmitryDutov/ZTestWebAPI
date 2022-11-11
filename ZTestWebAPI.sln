@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTestWebAPI", "ZTestWebAPI\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorForZTestWebAPI", "UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj", "{9AAF84F0-1EBF-422C-AB92-775853BD1015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTestWebDAL", "ZTestWebDAL\ZTestWebDAL.csproj", "{10EBB6E5-CBD7-4C8D-BB1B-C700AF2F6134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTestDomain", "ZTestDomain\ZTestDomain.csproj", "{A5A42E62-8587-4C9E-94BA-C0BB7B6B3CA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AAF84F0-1EBF-422C-AB92-775853BD1015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EBB6E5-CBD7-4C8D-BB1B-C700AF2F6134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EBB6E5-CBD7-4C8D-BB1B-C700AF2F6134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EBB6E5-CBD7-4C8D-BB1B-C700AF2F6134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EBB6E5-CBD7-4C8D-BB1B-C700AF2F6134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A42E62-8587-4C9E-94BA-C0BB7B6B3CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A42E62-8587-4C9E-94BA-C0BB7B6B3CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A42E62-8587-4C9E-94BA-C0BB7B6B3CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A42E62-8587-4C9E-94BA-C0BB7B6B3CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

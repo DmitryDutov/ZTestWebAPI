@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UI\BlazorForZTestWebAPI\BlazorForZTestWebAPI.csproj" />
+    <ProjectReference Include="..\ZTestDomain\ZTestDomain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
