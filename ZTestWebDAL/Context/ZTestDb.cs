@@ -15,6 +15,12 @@ namespace ZTestWebDAL.Context
         public DbSet<ValuesList> ValuesListSet { get; set; } 
         public ZTestDb(DbContextOptions<ZTestDb> options):base(options)
         {
+
+        }
+
+        protected override void OnModelCreating(ModelBuilder db)
+        {
+            base.OnModelCreating(db);
         }
     }
 }
