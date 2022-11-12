@@ -1,10 +1,19 @@
 
 //Add comment
-var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+using Microsoft.EntityFrameworkCore;
+using ZTestWebDAL.Context;
+
+var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+
+services.AddControllers();
+services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
+services.AddDbContext<ZTestDb>(opt 
+    => opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"))
+    );
+
 
 var app = builder.Build();
 
