@@ -1,11 +1,19 @@
-﻿using ZTestWebAPI.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using ZTestWebAPI.Entities.Base.Interface;
+using ZTestWebAPI.Models;
 
 namespace ZTestWebAPI.Moqs
 {
-    public class ValuesList
+    [Index(nameof(Id))]
+    public class ValuesList : Entity
     {
         private List<ValueModel>? _value { get; set; }
         public List<ValueModel>? Values => _value;
+
+        public ValuesList()
+        {
+            
+        }
 
         public ValuesList(ValueModel model)
         {
