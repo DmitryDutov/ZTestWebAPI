@@ -10,10 +10,9 @@ var services = builder.Services;
 services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
-services.AddDbContext<ZTestDb>(opt 
-    => opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"))
+services.AddDbContext<ZTestDb>(opt => 
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"))
     );
-
 
 var app = builder.Build();
 
