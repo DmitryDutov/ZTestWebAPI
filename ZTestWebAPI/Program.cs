@@ -1,6 +1,4 @@
 
-//Add comment
-
 using Microsoft.EntityFrameworkCore;
 using ZTestWebDAL.Context;
 
