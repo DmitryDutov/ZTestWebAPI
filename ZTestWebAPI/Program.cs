@@ -30,4 +30,3 @@ app.MapControllers();
 app.MapFallbackToFile("index.html"); //Если адрес непонятен, то перенаправляем на приложение Blazor
 app.Run();
 
-
